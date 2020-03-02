@@ -14,7 +14,7 @@
 <meta property="og:description" content="Configure your ssh.Run1ssh-keygen -t rsa -C &quot;your.email.com&quot; and copy all text except &quot;your.email.com&quot; in ~&#x2F;.ssh&#x2F;id_rsa.pub.Open github setting sshadd new ssh keyinput your text.d">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-22T13:33:50.000Z">
-<meta property="article:modified_time" content="2020-02-22T14:56:10.703Z">
+<meta property="article:modified_time" content="2020-02-26T13:16:33.712Z">
 <meta property="article:author" content="socsin">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="software">
@@ -76,6 +76,8 @@
     <br/>
     <span id="actions">
       <ul>
+        
+        <li><a class="icon" href="/2020/03/02/printer-linux/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="/2020/02/22/how-to-install-flux-on-manjaro/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -155,8 +157,7 @@
 and copy all text except <code>&quot;your.email.com&quot;</code> in <code>~/.ssh/id_rsa.pub</code>.<br>Open github setting ssh<br>add new ssh key<br>input your text.<br>done.</li>
 <li>Configure your hexo.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 and add<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;xxx&#x2F;xxx.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
-<li>Use it!!!<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rm -rf .deploy_git&#x2F;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-if you login your account<br>you can use<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -rf .deploy_git&#x2F;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<li>Use it!!!<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 

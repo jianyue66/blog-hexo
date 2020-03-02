@@ -29,15 +29,7 @@ deploy:
 ```
 3. Use it!!!
 ```
-rm -rf .deploy_git/
 hexo clean
-hexo g
-hexo d
-```
-if you login your account
-you can use
-```
-rm -rf .deploy_git/
 hexo g
 hexo d
 ```
